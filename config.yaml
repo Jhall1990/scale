@@ -1,0 +1,22 @@
+# GPIO number of the DT pin (GPIO #, not actual pin #)
+DT_PIN: 2
+
+# GPIO number of the SCK pin (GPIO #, not actual pin #)
+SCK_PIN: 3
+
+# Weight of an empty keg
+MIN_WEIGHT: 18
+
+# Weight of a full key
+MAX_WEIGHT: 77
+
+# Number of samples to take from the scale
+NUM_SAMPLES: 20
+
+# Reference unit, honestly getting this is a mystery to me.
+# Clone https://github.com/endail/hx711 then run make inside.
+# Then run the script "bin/hx711calibration <DT_GPIO> <SCK_GPIO>"
+REF_UNIT: -3698
+
+# Offset, also a mystery, use the same script as REF_UNIT
+OFFSET: -232980
